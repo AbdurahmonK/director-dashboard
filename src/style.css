@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_container {
+    height: 100vh;
+    display: grid;
+    overflow-y: hidden;
+    grid-template-columns: 1fr 5fr;
+}
+.leftSide img {
+    margin-top: 15px;
+}
+.leftSide {
+    height: 100vh;
+    border-right: 2px solid #898989;
+    min-width: 290px;
+    padding: 15px 0 0 35px;
+}
+.leftSide > li {
+    padding: 15px;
+    list-style: none;
+    color: #00b533;
+}
+.leftSide li:nth-child(2) {
+    margin-top: 80px;
+}
+.leftSide li:nth-child(3) {
+    margin-bottom: 370px;
+}
+.leftSide li:hover {
+    border-right: 4px solid #00b533;
+}
+.leftSide li a {
+    text-decoration: none;
+}
+.leftSide li a:visited {
+    color: #898989;
+}
+.leftSide > li > i {
+    padding-right: 25px;
+}
+
+.leftSide {
+    height: 100vh;
+    min-width: 280px;
+}
+.rightSide {
+    overflow-y: scroll;
+}
+.rightSide::-webkit-scrollbar {
+    width: 4px;
+}
+.rightSide::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #00b533;
+}
+.contanier {
+    padding: 30px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
+.user {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.user > div {
+    margin-left: 20px;
+}
+.all_data > h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.cards {
+    display: grid;
+    height: 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    border: 2px solid #f8f8f8;
+    justify-content: space-between;
+}
+.top {
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-between;
+}
+.top > p {
+    margin: 0;
+    max-width: 200px;
+}
+.bottom {
+    display: flex;
+    align-items: center;
+}
+.bottom > h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 10px 0 0;
+}
+.data {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.tab_bar {
+    width: 235px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 500;
+    color: #898989;
+    border-radius: 50px;
+    align-items: center;
+    background-color: #f8f8f8;
+    justify-content: space-evenly;
+}
+.tab_bar > span {
+    width: 70px;
+    height: 28px;
+    display: flex;
+    color: #000;
+    align-items: center;
+    border-radius: 120px;
+    justify-content: center;
+    background-color: #FFF;
+    box-shadow: 0px 2px 1px rgba(232, 232, 232, 0.734238);
+}
+.total_price {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.total_price > h2 {
+    margin: 0 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+.total_price > p {
+    margin: 0 0;
+    font-size: 14px;
+    color: #003846;
+    font-weight: normal;
+}
+.income {
+    height: 160px;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    border: 2px solid #f8f8f8;
+    justify-content: space-between;
+}
+.income_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.income_top > p:nth-child(1) {
+    margin: 0 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.real_money > div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #00b533;
+}
+.unreal_money > div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #ffb436;
+}
+.real_money, .unreal_money {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.real_money > p, .unreal_money > p{
+    margin: 0 0 0 10px;
+}
+.real_money > p > span, .unreal_money > p > span {
+    font-size: 14px;
+    color: #898989;
+}
+.income_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.income_category {
+    padding: 15px;
+    border: 2px solid #f8f8f8;
+}
+.circle_charts {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.circle_chart{
+    height: 255px;
+    padding: 15px;
+    border: 2px solid #f8f8f8;
+}
+.name_icon {
+    display: flex;
+    justify-content: space-between;
+}
+.name_icon > p {
+    max-width: 250px;
+}
+.circle_chart > b, .circle_chart > p {
+    margin: 0;
+    width: 200px;
+    position: relative;
+}
+.name_icon p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.table {
+    height: 670px;
+    padding: 15px;
+    border: 2px solid #f8f8f8;
+}
+.table_head {
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #898989;
+}
+.table_head > p:nth-child(1) {
+    min-width: 200px;
+    text-align: left;
+}
+.table_head > p {
+    min-width: 130px;
+    text-align: center;
+}
+.accordion {
+    border-bottom: 1px solid#898989;
+}
+.accordion_title {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordion_title > p:nth-child(1) {
+    min-width: 200px;
+    text-align: left;
+}
+.accordion_title > p, .accordion_title > div  {
+    min-width: 130px;
+    text-align: center;
+}
+.student  {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.student > p {
+    margin: 0;
+}
+.accordion_content {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    justify-content: space-between;
+    border-left: 4px solid #00b533;
+}
+.accordion_content > p:nth-child(1) {
+    left: 30px;   
+    min-width: 200px;
+    text-align: left;
+    position: relative;
+}
+.accordion_content > p, .accordion_content > div  {
+    min-width: 130px;
+    text-align: center;
+}
+.accordion_out {
+    overflow: hidden;
+    max-height: 500px;
+}
+.accordion_out:hover {
+    overflow-y: scroll;
+}
+.accordion_out::-webkit-scrollbar {
+    width: 5px;
+}
+.accordion_out::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #00b533;
+}
+
+.table_foot {
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+}
+.table_foot > p:nth-child(1) {
+    min-width: 200px;
+    text-align: left;
+    background-color: unset;
+}
+.table_foot > p {
+    padding: 10px 0;
+    min-width: 130px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
