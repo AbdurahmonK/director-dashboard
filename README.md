@@ -4,7 +4,7 @@ This test task project was Created in using  ReactJs(React Router Dom, Reacharts
 
 First clone or download the project. And than in the project directory, you can run:
 
-### `npm start`
+### `npm install`
 
 After installing all packages you can run: 
 
